@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inconsolata&family=Montserrat&family=Space+Mono&display=swap');
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video,
+hr {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+:root {
+    --font: 'Space Mono';
+
+    --gray-1: #333333;
+    --gray-2: #4F4F4F;
+    --gray-3: #7F7F7F;
+    --gray-4: #BDBDBD;
+    --white: #FFFFFF;
+    --yellow: #FFD25B;
+}
+
+::-moz-selection { /* Code for Firefox */
+  background: var(--yellow);
+}
+
+::selection {
+  background: var(--yellow);
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.title {
+    display: flex;
+    justify-content: start;
+    padding-top: 40px;
+    padding-left: 77px;
+}
+
+.title > h1 {
+    font-family: 'Inconsolata', monospace;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 25px;
+    letter-spacing: -0.08em;
+    text-transform: uppercase;
+    color: var(--gray-1);
+}
+
+.container {
+  display: flex;
+  flex: 1;
+}
+
+.left{
+  display: flex;
+  flex: 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.left > img {
+  max-width: 539.22px;
+  max-height: 414.25px;
+}
+
+.right {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  flex: 1;
+}
+
+.right > h1 {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 95px;
+  letter-spacing: -0.035em;
+  max-width: 586px;
+  color: var(--gray-1);
+}
+
+.right > span {
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 36px;
+  letter-spacing: -0.035em;
+  max-width: 381px;
+  color: var(--gray-2);
+}
+
+.right > button {
+  width: 216px;
+  height: 68px;
+  background-color: var(--gray-1);
+  font-family: 'Space Mono';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  letter-spacing: -0.035em;
+  text-transform: uppercase;
+  color: var(--white);
+}
+
+.right > button:hover {
+  background-color: var(--white);
+  color: var(--gray-1);
+  cursor: pointer;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding-bottom: 24px;
+}
+
+.footer > span {
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 17px;
+  /* identical to box height */
+  text-align: center;
+  color: var(--gray-4);
+}
+a {
+  color: var(--gray-4);
+}
+a:hover {
+  background-color: var(--yellow);
+}
+
+@media only screen and (max-width: 600px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .left > img {
+    max-width: 100%;
+	  height: auto;
+  }
+
+  .footer {
+    height: 30px;
+    padding-bottom: 8px;
+  }
+}
